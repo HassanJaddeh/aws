@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <title>Billing Management Console</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+<style>html { background-color: #f2f3f3; }</style>
+<meta name="awsc-session-data" content='{&#34;infrastructureRegion&#34;:&#34;us-east-1&#34;,&#34;accountId&#34;:&#34;417886594765&#34;,&#34;accountAlias&#34;:&#34;&#34;,&#34;displayName&#34;:&#34;SocialStudio&#34;,&#34;sessionARN&#34;:&#34;arn:aws:iam::417886594765:root&#34;,&#34;sessionId&#34;:&#34;1jf9-V36U-Djz-RVHRFLEBZ8_izzJDa3&#34;,&#34;identityToken&#34;:&#34;eyJ0eXAiOiJKV1MiLCJrZXlSZWdpb24iOiJ1cy1lYXN0LTEiLCJhbGciOiJFUzM4NCIsImtpZCI6IjZmNGM1ZTVkLTU4ODktNDJmMS04M2Y2LTA0MWUyMzczMDVkZCJ9.eyJzdWIiOiIiLCJzaWduaW5UeXBlIjoiUFVCTElDIiwiaXNzIjoiaHR0cHM6Ly9zaWduaW4uYXdzLmFtYXpvbi5jb20vc2lnbmluIiwia2V5YmFzZSI6IjNITVg0NlZTaUVxS05TaXV3TEY3QWZqbnUzV0lia0hhRVFhSzhFSGQyT3c9IiwiYXJuIjoiYXJuOmF3czppYW06OjQxNzg4NjU5NDc2NTpyb290IiwidXNlcm5hbWUiOiJTb2NpYWxTdHVkaW8ifQ.AD_GXlSs0es8ui_zMAZAR_aEekP10VBzCbNEqwBy6xlORMWNFzrW1bRBuNVB68w1dC_GruP2MJ1XHo3vk8y-XRG608xexEVn3pzR9ReGQgeTha3IX-G_0xyG8ahk3LVM&#34;,&#34;prismModeEnabled&#34;:false,&#34;dualstackEnabledDomain&#34;:false}' />
+<meta name="awsc-mezz" content="1">
+<meta id="awsc-mezz-region" name="awsc-mezz-region" content="us-east-1">
+<meta id="awsc-mezz-locale" name="awsc-mezz-locale" content="en">
+
+<meta name="awsc-console-supported-locales" content='{"consoleLanguages":[{"localeId":"en","supported":true,"localeDisplayName":"English (US)"},{"localeId":"en_GB","supported":false,"localeDisplayName":"English (UK)"},{"localeId":"id","supported":true,"localeDisplayName":"Bahasa Indonesia"},{"localeId":"de","supported":true,"localeDisplayName":"Deutsch"},{"localeId":"es","supported":true,"localeDisplayName":"Español"},{"localeId":"fr","supported":true,"localeDisplayName":"Français"},{"localeId":"ja","supported":true,"localeDisplayName":"日本語"},{"localeId":"it","supported":true,"localeDisplayName":"Italiano"},{"localeId":"pt_BR","supported":true,"localeDisplayName":"Português"},{"localeId":"ko","supported":true,"localeDisplayName":"한국어"},{"localeId":"zh_CN","supported":true,"localeDisplayName":"中文(简体)"},{"localeId":"zh_TW","supported":true,"localeDisplayName":"中文(繁體)"},{"localeId":"tr_TR","supported":false,"localeDisplayName":"Turkish (Turkey)"}]}'/>
+<meta id="awsc-mezz-fb" name="awsc-mezz-fb" content="0">
+<meta id="awsc-proxy-request-id" name="awsc-proxy-request-id" content="9cbb8b1594479ca2675359f8276fc3b1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="icon-domain" content='https://d2q66yyjeovezo.cloudfront.net'/><style type="text/css">
+#awsgnav #nav-logo,
+#awsgnav .nav-menu-arrow,
+#awsgnav .service-icon,
+#awsgnav .nav-selected-category-arrow,
+#awsgnav .nav-menu-content-close-arrow,
+#awsgnav .service-drag-handle,
+#awsgnav #awsc-rg-loading,
+#awsgnav #awsc-rg-error:before,
+.awsc-footer-icon,
+.awsc-service-icon /* .awsc-service-icon to be used by Console Home */
+{
+    background-image: url('https://d34xub3ut0ooib.cloudfront.net/img/icon-sprite-745950b374bf9b34a4f7528309dd162b.png');
+    background-repeat: no-repeat;
+}</style>
+
+
+<meta id="awsc-widget-nav" name="awsc-widget-nav" content="1">
+
+
+<script data-platform-asset="telemetry-broker" type="text/javascript" src="https://a.b.cdn.console.awsstatic.com/a/v1/RBZCUG4S4C45W527JTAOUA3HMHNMIIZQ6SJQ7W5S5MUMQZ7IF6PQ/index.js"></script>
+<script data-platform-asset="global-nav-head" src="https://a.b.cdn.console.awsstatic.com/a/v1/APBDHC3Y6GIAT4MTVP5BPPHJPRID3LOWIFB6TZQWXHCQ6YHZJUTQ/awsc-head.js"></script>
+<script data-unified-console-app-loader data-platform-asset="unified-console" type="module" async="async" crossorigin="anonymous" src="https://a.b.cdn.console.awsstatic.com/a/v1/F4MLTBBL2XYCLM75CXRLEAB4HOUEGDMZBV4PAX47RGFLAWP4CT5Q/index.js"></script>
+<link data-platform-asset="global-nav-css" rel="stylesheet" href="https://a.b.cdn.console.awsstatic.com/a/v1/4SJHLV2XD454PF3O72XW7FME4KHDW2M3DWV63MS7KHMTNRLNPNPQ/global-styles.css?version=*"></link>
+
+
+
+        <meta name="awsc-lang"
+            content="en_US">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- If a webpage contains numbers that can be interpreted as phone numbers, iOS by default
+        adds Phone Links to it. This is to turn off telephone number detection in iOS Safari. -->
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="tb-data" content='{"custom":{"awsdocsEndpoint":"https:\/\/docs.aws.amazon.com","aws-payments-gateway-core-serviceEndpoint":"https:\/\/payments-gateway.us-east-1.api.aws\/","awspaymentencryptionserviceEndpoint":"https:\/\/aws-payment-encryption-prod.iad.amazonaws.com\/","awscpentityexternalproxyserviceEndpoint":"https:\/\/api.us-east-1.prod.externalproxy.entities.cp-ie.aws.dev\/","help_panel_api_serviceEndpoint":"https:\/\/us.help-panel.docs.aws.a2z.com"}}'>
+        <meta name="tbt-data" content="{&quot;telemetryToken&quot;:&quot;v1/a220526fb7e6f162a8eeca8ff6994d4c1bfc71dd5d4933ddb7facf762f9dddde&quot;}">
+
+        <!-- preload Account and Bills css and JS --->
+        
+          
+        
+          
+            <link href="https://a.b.cdn.console.awsstatic.com/a/v1/YF4D2PN7XV7IMUJM5PWGIOMXALWT2CZZ7UVXA6MOFQ45P3VH3JPA/index.js" rel="preload" as="script">
+          
+        
+          
+            <link href="https://a.b.cdn.console.awsstatic.com/a/v1/AJ3GEKDNE3CVSPSLKFBRD6KI7JLP5HMUZIZHV6WWEJKUZEUV5OTQ/index.js" rel="preload" as="script">
+          
+        
+        
+          
+        
+          
+            <link href="https://a.b.cdn.console.awsstatic.com/a/v1/YF4D2PN7XV7IMUJM5PWGIOMXALWT2CZZ7UVXA6MOFQ45P3VH3JPA/index.css" rel="preload" as="style">
+          
+        
+          
+            <link href="https://a.b.cdn.console.awsstatic.com/a/v1/AJ3GEKDNE3CVSPSLKFBRD6KI7JLP5HMUZIZHV6WWEJKUZEUV5OTQ/index.css" rel="preload" as="style">
+          
+        
+        <!-- end of preload --->
+
+        
+          
+            <link href="https://a.b.cdn.console.awsstatic.com/a/v1/SKHWC4TTRPSXF3XZKO5FE4VHMFX7IJMGZAVMH7DSEQPY35XN43VQ/index.css" rel="stylesheet">
+          
+        
+          
+        
+          
+        
+
+        <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/billing/console/src/css/checkbox.css" /><![endif]-->
+        
+    
+</head>
+<body spellcheck="false">
+  <div id="b">
+    <div id="h" ng-non-bindable>
+
+
+<div id="consoleNavHeader" style=""><div id="skeleton-nav-awt-wrapper" data-testid="skeleton-nav-default-awt-wrapper">
+<div class="skeleton-nav-awt-loader">
+  <div class="aws-logo-wrapper">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="2.0"
+      focusable="false"
+      aria-hidden="true"
+      class="aws-logo"
+      viewBox="0 0 29 17"
+    >
+      <path
+        class="aws-logo__letters"
+        d="M8.38 6.17a2.6 2.6 0 00.11.83c.08.232.18.456.3.67a.4.4 0 01.07.21.36.36 0 01-.18.28l-.59.39a.43.43 0 01-.24.08.38.38 0 01-.28-.13 2.38 2.38 0 01-.34-.43c-.09-.16-.18-.34-.28-.55a3.44 3.44 0 01-2.74 1.29 2.54 2.54 0 01-1.86-.67 2.36 2.36 0 01-.68-1.79 2.43 2.43 0 01.84-1.92 3.43 3.43 0 012.29-.72 6.75 6.75 0 011 .07c.35.05.7.12 1.07.2V3.3a2.06 2.06 0 00-.44-1.49 2.12 2.12 0 00-1.52-.43 4.4 4.4 0 00-1 .12 6.85 6.85 0 00-1 .32l-.33.12h-.14c-.14 0-.2-.1-.2-.29v-.46A.62.62 0 012.3.87a.78.78 0 01.27-.2A6 6 0 013.74.25 5.7 5.7 0 015.19.07a3.37 3.37 0 012.44.76 3 3 0 01.77 2.29l-.02 3.05zM4.6 7.59a3 3 0 001-.17 2 2 0 00.88-.6 1.36 1.36 0 00.32-.59 3.18 3.18 0 00.09-.81V5A7.52 7.52 0 006 4.87h-.88a2.13 2.13 0 00-1.38.37 1.3 1.3 0 00-.46 1.08 1.3 1.3 0 00.34 1c.278.216.63.313.98.27zm7.49 1a.56.56 0 01-.36-.09.73.73 0 01-.2-.37L9.35.93a1.39 1.39 0 01-.08-.38c0-.15.07-.23.22-.23h.92a.56.56 0 01.36.09.74.74 0 01.19.37L12.53 7 14 .79a.61.61 0 01.18-.37.59.59 0 01.37-.09h.75a.62.62 0 01.38.09.74.74 0 01.18.37L17.31 7 18.92.76a.74.74 0 01.19-.37.56.56 0 01.36-.09h.87a.21.21 0 01.23.23 1 1 0 010 .15s0 .13-.06.23l-2.26 7.2a.74.74 0 01-.19.37.6.6 0 01-.36.09h-.8a.53.53 0 01-.37-.1.64.64 0 01-.18-.37l-1.45-6-1.44 6a.64.64 0 01-.18.37.55.55 0 01-.37.1l-.82.02zm12 .24a6.29 6.29 0 01-1.44-.16 4.21 4.21 0 01-1.07-.37.69.69 0 01-.29-.26.66.66 0 01-.06-.27V7.3c0-.19.07-.29.21-.29a.57.57 0 01.18 0l.23.1c.32.143.656.25 1 .32.365.08.737.12 1.11.12a2.47 2.47 0 001.36-.31 1 1 0 00.48-.88.88.88 0 00-.25-.65 2.29 2.29 0 00-.94-.49l-1.35-.43a2.83 2.83 0 01-1.49-.94 2.24 2.24 0 01-.47-1.36 2 2 0 01.25-1c.167-.3.395-.563.67-.77a3 3 0 011-.48A4.1 4.1 0 0124.4.08a4.4 4.4 0 01.62 0l.61.1.53.15.39.16c.105.062.2.14.28.23a.57.57 0 01.08.31v.44c0 .2-.07.3-.21.3a.92.92 0 01-.36-.12 4.35 4.35 0 00-1.8-.36 2.51 2.51 0 00-1.24.26.92.92 0 00-.44.84c0 .249.1.488.28.66.295.236.635.41 1 .51l1.32.42a2.88 2.88 0 011.44.9 2.1 2.1 0 01.43 1.31 2.38 2.38 0 01-.24 1.08 2.34 2.34 0 01-.68.82 3 3 0 01-1 .53 4.59 4.59 0 01-1.35.22l.03-.01z"
+      ></path>
+      <path
+        class="aws-logo__smile"
+        d="M25.82 13.43a20.07 20.07 0 01-11.35 3.47A20.54 20.54 0 01.61 11.62c-.29-.26 0-.62.32-.42a27.81 27.81 0 0013.86 3.68 27.54 27.54 0 0010.58-2.16c.52-.22.96.34.45.71z"
+      ></path>
+      <path
+        class="aws-logo__smile"
+        d="M27.1 12c-.4-.51-2.6-.24-3.59-.12-.3 0-.34-.23-.07-.42 1.75-1.23 4.63-.88 5-.46.37.42-.09 3.3-1.74 4.68-.25.21-.49.09-.38-.18.34-.95 1.17-3.02.78-3.5z"
+      ></path>
+    </svg>
+  </div>
+</div>
+<style id="skeleton-nav-awt-style">
+  .skeleton-nav-awt-loader .aws-logo {
+    display: block;
+    width: 33px;
+    height: 19px;
+    position: relative;
+  }
+
+  .skeleton-nav-awt-loader .aws-logo-wrapper {
+    position: relative;
+    padding: 9px 17px;
+  }
+
+  .skeleton-nav-awt-loader .aws-logo__letters {
+    fill: #ffffff;
+  }
+
+  .skeleton-nav-awt-loader .aws-logo__smile {
+    fill: #ffffff;
+    fill-rule: evenodd;
+  }
+
+  .skeleton-nav-awt-loader {
+    display: flex;
+    align-items: center;
+    height: 51px;
+    background-color: #161d26;
+    border-bottom: 1px solid rgb(84, 91, 100);
+  }
+</style>
+</div></div>
+</div>
+<div id="cc">
+  <div id="c">
+
+
+        <div id="billing-console-root"></div>
+        <div id="dialogUnderlay"></div>
+
+        <input type="hidden" id="xsrfToken" value="Y1ByTTlodWdpaURZQnB6ekJ2ODF6Y3ZEYUx3NE83TXN0QXVNSElwZzMtMHwtMTE3MDE2Nzc2NzYyMDQ2MDg3MHwxfDIwMjYtMDgtMTJUMTg6MzI6MzcuOTczWg==" />
+        <input type="hidden" id="stack" value="NA" />
+        <input type="hidden" id="stage" value="Prod" />
+        <input type="hidden" id="region" value="us-east-1" />
+        <input type="hidden" id="whitelisted" value="false" />
+        <input type="hidden" id="inFreeTierBlacklist" value="false" />
+        <input type="hidden" id="isBudgetNavBarOn" value="true" />
+        <input type="hidden" id="isBudgetSignupOn" value="true" />
+        <input type="hidden" id="isFreeTierSwitchOn" value="true" />
+        <input type="hidden" id="inReportPreferenceWhitelist" value="true" />
+        <input type="hidden" id="isReportPreferenceSwitchOn" value="true" />
+        <input type="hidden" id="inImprovedCostAllocationTagsWhitelist" value="false" />
+        <input type="hidden" id="isInBudgetCreationLimitWhilteList" value="" />
+        <input type="hidden" id="isInLargeCustomerBlacklist" value="false" />
+        <input type="hidden" id="selectedLocale" value="en_US" />
+        <input type="hidden" id="marketPlace" value="ATVPDKIKX0DER" />
+        <input type="hidden" id="marketPlaceGroup" value="AWS" />
+        <input type="hidden" id="govCloudConsoleUrl" value="https://signin.amazonaws-us-gov.com" />
+        <input type="hidden" id="govCloudSignUpUrl" value="https://portal.aws.amazon.com/billing/signup#/govcloud" />
+        <input type="hidden" id="whitelistedDomains" value="aws.amazon.com,aws.amazon.cn" />
+        <input type="hidden" id="isBudgetServiceV2SwitchOn" value="true"/>
+        <input type="hidden" id="isCostsInsightsPreferenceServiceSwitchOn" value=""/>
+        <input type="hidden" id="inSpendMapWhitelist" value="false" />
+        <input type="hidden" id="isInBudgetsV2Whitelist" value="false" />
+        <input type="hidden" id="isBudgetServiceV2ChartSwitchOn" value="false"/>
+        <input type="hidden" id="isOrganizationsSwitchOn" value="true"/>
+        <input type="hidden" id="isInOrganizationsWhitelist" value="false"/>
+        <input type="hidden" id="isAISPLCostExplorerSwitchOn" value="true"/>
+        <input type="hidden" id="isInAISPLCostExplorerWhitelist" value="false"/>
+        <input type="hidden" id="isICATSwitchOn" value="true"/>
+        <input type="hidden" id="isICATCreatedBySwitchOn" value="true"/>
+        <input type="hidden" id="isOrganizationsGASwitchOn" value="true"/>
+        <input type="hidden" id="isAntelopeSwitchOn" value="false"/>
+        <input type="hidden" id="isSnapshotFeatureSwitchOn" value="false"/>
+        <input type="hidden" id="isRIAlertsSwitchOn" value="true"/>
+        <input type="hidden" id="isWhatsNewBannerSwitchOn" value="true"/>
+        <input type="hidden" id="isInAntelopeWhitelist" value="false"/>
+        <input type="hidden" id="isInUsageTypeGroupWhitelist" value="false"/>
+        <input type="hidden" id="isInSnapshotFeatureWhitelist" value="false"/>
+        <input type="hidden" id="isInRIAlertsWhitelist" value="false"/>
+        <input type="hidden" id="isLinkedAccountSwitchOn" value="true"/>
+        <input type="hidden" id="isInLinkedAccountWhitelist" value="false"/>
+        <input type="hidden" id="isAccountIdentityDecouplingEditURLSwitchOn" value="true"/>
+        <input type="hidden" id="isInAbsoluteValueWhitelist" value="false"/>
+        <input type="hidden" id="isAbsoluteValueSwitchOn" value="true"/>
+        <input type="hidden" id="isFreeTierBudgetsPreferenceEnabled" value="true"/>
+        <input type="hidden" id="isBudgetsAdvancedOptionsSwitchOn" value="true"/>
+        <input type="hidden" id="isInBudgetsAdvancedOptionsWhitelist" value="false"/>
+        <input type="hidden" id="isBudgetsAmortizationSwitchOn" value="true"/>
+        <input type="hidden" id="isInBudgetsAmortizationWhitelist" value="false"/>
+        <input type="hidden" id="isInBudgetsEDPWhitelist" value="false"/>
+        <input type="hidden" id="isInEMEAWhitelist" value="false"/>
+        <input type="hidden" id="isInCUROCBWhitelist" value="false"/>
+        <input type="hidden" id="isSharingPreferencesSwitchOn" value="true"/>
+        <input type="hidden" id="isInAntelopePercentBasedWhitelist" value="true" />
+        <input type="hidden" id="isInBAStoLIDSinDashboardPercentBasedWhitelist" value="false" />
+        <input type="hidden" id="isInBASToLIDSInSpendByServicePercentBasedWhitelist" value="true" />
+        <input type="hidden" id="isInBASToLIDSInForecastPercentBasedWhitelist" value="true" />
+        <input type="hidden" id="isWidgetSupportOn" value="true"/>
+        <input type="hidden" id="isBudgetWidgetOn" value="true"/>
+        <input type="hidden" id="isCreditsWidgetOn" value="false"/>
+        <input type="hidden" id="isRICoverageAlertsEnabled" value="true" />
+        <input type="hidden" id="isSORChangeNotificationSwitchOn" value="false" />
+        <input type="hidden" id="isInEMEAPercentBasedWhitelist" value="true" />
+        <input type="hidden" id="isInCUROCBPercentBasedWhitelist" value="true" />
+        <input type="hidden" id="isAntelopeStack" value="false" />
+        <input type="hidden" id="isInTransactionsWhitelist" value="false" />
+        <input type="hidden" id="isInTransactionsWhitelistOverride" value="false"/>
+        <input type="hidden" id="isTransactionsSwitchOn" value="true"/>
+        <input type="hidden" id="isBudgetBackendProxyEnabled" value="true" />
+        <input type="hidden" id="isPaymentsWidgetOn" value="true" />
+        <input type="hidden" id="isInPaymentsWidgetPercentBasedWhitelist" value="true" />
+        <input type="hidden" id="isInFreeTierV2Whitelist" value="true" />
+        <input type="hidden" id="isInAISPLAutoChargeWhitelist" value="true" />
+        <input type="hidden" id="isInHeimdallBetaAllowlist" value="false" />
+        <input type="hidden" id="isAccountPermissionMigrationEnabled" value="true" />
+        <input type="hidden" id="isAccountPermissionMigrationAllowlisted" value="false" />
+        <input type="hidden" id="isOptimizeAssetLoadEnabled" value="true" />
+
+		<span class="hide" style="display:none;" id="thirdPartyResponse"></span>
+        <span class="hide" style="display:none;" id="freeTierUsageJson">{"204635470":{"usageDisplayName":"Cognito - Storage","usageLimit":"10"},"3754521":{"usageDisplayName":"Directory - Service","usageLimit":"750"},"16440153":{"usageDisplayName":"SES","usageLimit":"62000"},"16440142":{"usageDisplayName":"SES","usageLimit":"62000"},"264173884":{"usageDisplayName":"RDS - Storage","usageLimit":"20"},"231548279":{"usageDisplayName":"ElastiCache","usageLimit":"750"},"234217092":{"usageDisplayName":"Redshift","usageLimit":"750"},"273761013":{"usageDisplayName":"ELB - Load Balancing","usageLimit":"750"},"264170912":{"usageDisplayName":"RDS - Instance","usageLimit":"750"},"273705667":{"usageDisplayName":"ELB - Data Processing","usageLimit":"15"},"272752187":{"usageDisplayName":"CloudWatch - Log Storage","usageLimit":"5"},"204635467":{"usageDisplayName":"Cognito - Sync","usageLimit":"1000000"},"273709720":{"usageDisplayName":"EC2 - Linux","usageLimit":"750"},"273686709":{"usageDisplayName":"EC2 - Windows","usageLimit":"750"},"221699771":{"usageDisplayName":"API Gateway - Requests","usageLimit":"1000000"},"228666859":{"usageDisplayName":"SWF - Actions","usageLimit":"10000"},"228666793":{"usageDisplayName":"SWF - Workflow Executions","usageLimit":"1000"},"228666799":{"usageDisplayName":"SWF - Workflow Days","usageLimit":"30000"},"273705874":{"usageDisplayName":"CloudWatch - Alarms","usageLimit":"10"},"273815345":{"usageDisplayName":"CloudWatch - Metrics","usageLimit":"10"},"273731359":{"usageDisplayName":"CloudWatch - Requests","usageLimit":"1000000"},"254632136":{"usageDisplayName":"CloudFront - Data Transfer Out","usageLimit":"50"},"221699830":{"usageDisplayName":"API Gateway - Data Transfer Out","usageLimit":"15"},"273728693":{"usageDisplayName":"EBS - Snapshots","usageLimit":"1"},"273800777":{"usageDisplayName":"EBS - I/Os","usageLimit":"2000000"},"273796039":{"usageDisplayName":"EBS - Volumes","usageLimit":"30"},"13799180":{"usageDisplayName":"ETS - Audio","usageLimit":"20"},"13799160":{"usageDisplayName":"ETS - HD","usageLimit":"10"},"13799159":{"usageDisplayName":"ETS - SD","usageLimit":"20"},"229409328":{"usageDisplayName":"KMS - Requests","usageLimit":"20000"},"245601010":{"usageDisplayName":"Lambda - GB Second","usageLimit":"400000"},"264176593":{"usageDisplayName":"RDS - I/Os","usageLimit":"10000000"},"245600995":{"usageDisplayName":"Lambda - Requests","usageLimit":"1000000"},"243537238":{"usageDisplayName":"S3 - Puts","usageLimit":"2000"},"254632003":{"usageDisplayName":"CloudFront - Requests","usageLimit":"2000000"},"243537260":{"usageDisplayName":"S3 - Gets","usageLimit":"20000"},"243027260":{"usageDisplayName":"App Stream","usageLimit":"20"},"243499404":{"usageDisplayName":"S3 - Storage","usageLimit":"5"},"272751797":{"usageDisplayName":"CloudWatch - Storage","usageLimit":"5"},"204635454":{"usageDisplayName":"Cognito - Storage","usageLimit":"10"},"4670788":{"usageDisplayName":"Directory - Service","usageLimit":"750"},"16440178":{"usageDisplayName":"SES","usageLimit":"62000"},"16440204":{"usageDisplayName":"SES","usageLimit":"62000"},"231552328":{"usageDisplayName":"ElastiCache","usageLimit":"750"},"234343853":{"usageDisplayName":"Redshift","usageLimit":"750"},"275451218":{"usageDisplayName":"ELB - Load Balancing","usageLimit":"750"},"275351348":{"usageDisplayName":"ELB - Data Processing","usageLimit":"15"},"269545933":{"usageDisplayName":"CloudWatch - Log Storage","usageLimit":"5"},"204635432":{"usageDisplayName":"Cognito - Sync","usageLimit":"1000000"},"275325962":{"usageDisplayName":"EC2 - Linux","usageLimit":"750"},"275440239":{"usageDisplayName":"EC2 - Windows","usageLimit":"750"},"228666665":{"usageDisplayName":"SWF - Actions","usageLimit":"10000"},"228666745":{"usageDisplayName":"SWF - Workflow Executions","usageLimit":"1000"},"228666753":{"usageDisplayName":"SWF - Workflow Days","usageLimit":"30000"},"275318401":{"usageDisplayName":"CloudWatch - Alarms","usageLimit":"10"},"275354447":{"usageDisplayName":"CloudWatch - Metrics","usageLimit":"10"},"275342140":{"usageDisplayName":"CloudWatch - Requests","usageLimit":"1000000"},"254619772":{"usageDisplayName":"CloudFront - Data Transfer Out","usageLimit":"50"},"275358255":{"usageDisplayName":"EBS - Snapshots","usageLimit":"1"},"275353086":{"usageDisplayName":"EBS - I/Os","usageLimit":"2000000"},"275391798":{"usageDisplayName":"EBS - Volumes","usageLimit":"30"},"13799894":{"usageDisplayName":"ETS - Audio","usageLimit":"20"},"13799891":{"usageDisplayName":"ETS - HD","usageLimit":"10"},"13799890":{"usageDisplayName":"ETS - SD","usageLimit":"20"},"229407557":{"usageDisplayName":"KMS - Requests","usageLimit":"20000"},"243591223":{"usageDisplayName":"S3 - Puts","usageLimit":"2000"},"254619788":{"usageDisplayName":"CloudFront - Requests","usageLimit":"2000000"},"243591848":{"usageDisplayName":"S3 - Gets","usageLimit":"20000"},"243591938":{"usageDisplayName":"S3 - Storage","usageLimit":"5"},"269545966":{"usageDisplayName":"CloudWatch - Storage","usageLimit":"5"},"268374178":{"usageDisplayName":"DynamoDB - Committed Throughput : APS2-WriteCapacity","usageLimit":"18600"},"268374162":{"usageDisplayName":"DynamoDB - TimedStorage SAE1","usageLimit":"25"},"268374251":{"usageDisplayName":"DynamoDB - Committed Throughput : APN1-ReadCapacity","usageLimit":"18600"},"268374260":{"usageDisplayName":"DynamoDB - Committed Throughput : USW2-ReadCapacity","usageLimit":"18600"},"268374140":{"usageDisplayName":"DynamoDB - Committed Throughput : APS3-WriteCapacity","usageLimit":"18600"},"268374173":{"usageDisplayName":"DynamoDB - Committed Throughput : APN1-WriteCapacity","usageLimit":"18600"},"268374307":{"usageDisplayName":"DynamoDB - Committed Throughput : SAE1-WriteCapacity","usageLimit":"18600"},"268374269":{"usageDisplayName":"DynamoDB - Committed Throughput : APS3-ReadCapacity","usageLimit":"18600"},"268374172":{"usageDisplayName":"DynamoDB - Committed Throughput : APN2-ReadCapacity","usageLimit":"18600"},"268374144":{"usageDisplayName":"DynamoDB - Committed Throughput : SAE1-ReadCapacity","usageLimit":"18600"},"268374240":{"usageDisplayName":"DynamoDB - Committed Throughput : USE2-WriteCapacity","usageLimit":"18600"},"268374321":{"usageDisplayName":"DynamoDB - TimedStorage EUC1","usageLimit":"25"},"268374246":{"usageDisplayName":"DynamoDB - Committed Throughput : APS1-ReadCapacity","usageLimit":"18600"},"268374205":{"usageDisplayName":"DynamoDB - TimedStorage APN2","usageLimit":"25"},"268374292":{"usageDisplayName":"DynamoDB - TimedStorage","usageLimit":"25"},"268374220":{"usageDisplayName":"DynamoDB - Committed Throughput : ReadCapacity","usageLimit":"18600"},"268374182":{"usageDisplayName":"DynamoDB - TimedStorage USW2","usageLimit":"25"},"268374211":{"usageDisplayName":"DynamoDB - Committed Throughput : EUW2-WriteCapacity","usageLimit":"18600"},"268374200":{"usageDisplayName":"DynamoDB - TimedStorage APS2","usageLimit":"25"},"268374299":{"usageDisplayName":"DynamoDB - TimedStorage USE2","usageLimit":"25"},"268374268":{"usageDisplayName":"DynamoDB - TimedStorage APS3","usageLimit":"25"},"268374265":{"usageDisplayName":"DynamoDB - Committed Throughput : APN2-WriteCapacity","usageLimit":"18600"},"268374297":{"usageDisplayName":"DynamoDB - Committed Throughput : APS1-WriteCapacity","usageLimit":"18600"},"268374236":{"usageDisplayName":"DynamoDB - TimedStorage CAN1","usageLimit":"25"},"268374204":{"usageDisplayName":"DynamoDB - Committed Throughput : CAN1-ReadCapacity","usageLimit":"18600"},"268374295":{"usageDisplayName":"DynamoDB - Committed Throughput : EU-ReadCapacity","usageLimit":"18600"},"268374179":{"usageDisplayName":"DynamoDB - Committed Throughput : EUC1-ReadCapacity","usageLimit":"18600"},"268374264":{"usageDisplayName":"DynamoDB - Committed Throughput : CAN1-WriteCapacity","usageLimit":"18600"},"268374202":{"usageDisplayName":"DynamoDB - TimedStorage APN1","usageLimit":"25"},"268374274":{"usageDisplayName":"DynamoDB - Committed Throughput : EUC1-WriteCapacity","usageLimit":"18600"},"268374329":{"usageDisplayName":"DynamoDB - Committed Throughput : USW1-ReadCapacity","usageLimit":"18600"},"268374192":{"usageDisplayName":"DynamoDB - TimedStorage CAN1","usageLimit":"25"},"268374193":{"usageDisplayName":"DynamoDB - Committed Throughput : EUW2-ReadCapacity","usageLimit":"18600"},"268374166":{"usageDisplayName":"DynamoDB - Committed Throughput : USW1-WriteCapacity","usageLimit":"18600"},"268374203":{"usageDisplayName":"DynamoDB - Committed Throughput : USE2-ReadCapacity","usageLimit":"18600"},"268374170":{"usageDisplayName":"DynamoDB - TimedStorage EUW2","usageLimit":"25"},"268374174":{"usageDisplayName":"DynamoDB - TimedStorage USW1","usageLimit":"25"},"268374195":{"usageDisplayName":"DynamoDB - Committed Throughput : EU-WriteCapacity","usageLimit":"18600"},"268374194":{"usageDisplayName":"DynamoDB - TimedStorage EU","usageLimit":"25"},"268374287":{"usageDisplayName":"DynamoDB - Committed Throughput : APS2-ReadCapacity","usageLimit":"18600"},"268374289":{"usageDisplayName":"DynamoDB - Committed Throughput : USW2-WriteCapacity","usageLimit":"18600"},"21089540":{"usageDisplayName":"DynamoDB - Committed Throughput : WriteCapacity","usageLimit":"18600"},"21089541":{"usageDisplayName":"DynamoDB - Committed Throughput : ReadCapacity","usageLimit":"18600"}}</span>
+        <span class="hide" style="display:none;" id="assetsManifest">[{"features":{},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/CTJJIW7V26IODZLLNXR7QHYK4E76G4A6TXHOXAUILUL4ZJZ3SCYQ\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/CTJJIW7V26IODZLLNXR7QHYK4E76G4A6TXHOXAUILUL4ZJZ3SCYQ\/index.css"}],"id":"map-credits"},{"features":{"isMemberCurEnabled":true,"isCCFTRegionNameAvailable":false,"isCostAllocationAvailable":true,"isBillingViewsEnabled":true,"isManualDiscountEnabled":false,"isCarbonFootprintDashboardEnabled":false,"isQuickSightAvailable":true,"CCFTMethodologyUpdateBanner":false},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/SCV5C4U45PUWMTJSFUGBBCG6NIL6NFT5WOOCP63HQ65OYUMCPC2Q\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/SCV5C4U45PUWMTJSFUGBBCG6NIL6NFT5WOOCP63HQ65OYUMCPC2Q\/index.css"}],"id":"reports"},{"features":{"isAllBillingReportsEnabled":false,"isWebpack5Widget":true,"isApertureBannerEnabled":true,"isCustomInvoiceDeliveryEnabled":false,"isAccountNameEnabled":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/LBSLECSZQGEI5D2JLQEFDNKEKYK33IOI736W23OYYUTT3X2WBE2A\/index.js"}],"id":"preferences"},{"features":{"isUsingCollectionsCreatePaymentAttemptInMexico":true,"isPartialPaymentEnabledEmeaCc":true,"isUsingCollectionsCreatePaymentAttemptInIndiaUPI":true,"isUsingCollectionsCreatePaymentAttemptForFinancing":false,"isUsingCollectionsCreatePaymentAttemptInEmea":true,"isUsingCollectionsCreatePaymentAttemptInBrazil":true,"shouldUseGenerateWithdrawalDisclosureAPI":false,"isUsingCollectionsCreatePaymentAttemptInIndiaCreditCardNetBanking":true,"isUsingCollectionsCreatePaymentAttemptInJapan":true,"isBypassingSorFFToEnableCreatePaymentAttempt":false,"isUsingCollectionsCreatePaymentAttemptInIndonesia":true,"isPartialPaymentEnabledEmeaSepa":true,"isUsingCollectionsCreatePaymentAttemptInNewZealand":true,"isUsingCollectionsCreatePaymentAttemptInAmcsEmea":true,"isUsingCollectionsCreatePaymentAttemptInSouthAfrica":true,"isUsingCollectionsCreatePaymentAttemptInAwsInc":true,"isPayableOCBPartialPayEnabled":false,"isPartialPaymentEnabledIncSor":true,"isUsingCollectionsCreatePaymentAttemptInTaiwan":true,"isUsingCollectionsCreatePaymentAttemptInSouthKorea":true,"isUsingCollectionsCreatePaymentAttemptInSingapore":true,"isUsingCollectionsCreatePaymentAttemptInChina":false,"isUsingCollectionsCreatePaymentAttemptInChile":true,"isUsingCollectionsCreatePaymentAttemptInAustralia":true,"isInvoiceLicenseTenureValidationEnabled":true,"shouldUseExternalizedGeneratePaymentQrCode":true,"isUsingCollectionsCreatePaymentAttemptInMalaysia":true,"isUpiScanAndPayEnabled":true,"isPartialPaymentEnabled":true,"isUpiEnabled":false,"isUsingCollectionsCreatePaymentAttemptInEmeaMp":true,"isBacsSipEnabled":true,"isPartialPaymentEnabledAch":true,"isUsingCollectionsCreatePaymentAttemptInTurkey":true,"isThresholdReducedPartialPayTestAccounts":false,"isMandateLatencyImproveEnabled":true,"isUsingCollectionsCreatePaymentAttemptInCanada":true,"isPartialPaymentEnabledDefaultSor":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/5YQPCSHAYDQNA4ZX5WKSLDQCTD6LLSMNBMOYB44QSBG6C7JEZERA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/5YQPCSHAYDQNA4ZX5WKSLDQCTD6LLSMNBMOYB44QSBG6C7JEZERA\/index.css"}],"id":"complete-payment"},{"features":{"isAddLegacyCreditCardWidgetEnabledForIndia":false,"isUpiAutoPayScanAndPayEnabled":true,"isAddLegacyCreditCardWidgetEnabledForTurkey":true,"isConfirmPaymentMethodEnabled":true,"isBackupPaymentMethodEnabled":true,"isBelgiumSepaBankAccountInstrumentLinkEnabled":true,"isCVVEnabled":true,"isEncryptionServiceEnabledForCNYKYBC":true,"isExternalGetCurrencyEnabledForDefaultPage":false,"isAutomaticCardPaymentsIndiaFeedbackBannerEnabled":true,"isEncryptionServiceWAFTokenEnabled":true,"isAddLegacyCreditCardWidgetEnabledForSouthAfrica":false,"isAddLegacyCreditCardWidgetEnabledForSouthKorea":true,"isAddBacsBankAccountWidgetEnabled":true,"isCurrencyRevampStreamAEnabled":true,"isNetTermsSetCCAsDefaultEnabled":false,"isGetBillingAddressChangeImpactEndpointEnabled":true,"isPreventMFAFailureSetAsDefaultEnabled":true,"isAddLegacyCreditCardWidgetEnabledForBrazil":true,"isPaymentProfilesEnabled":true,"isAisplConfigurableSorEnabled":true,"isExternalGetCurrencyEnabledForEditRemitPage":false,"isSpainSepaBankAccountInstrumentLinkEnabled":true,"isAddLegacyCreditCardWidgetEnabledForTaiwan":true,"isAchBavEnabled":true,"isPAPG3COFTEnabled":true,"isCreditCardWidgetEnabledForMFA":true,"isAddLegacyCreditCardWidgetEnabledForEmea":true,"isAddLegacyCreditCardWidgetEnabledForSingapore":false,"isFranceSepaBankAccountInstrumentLinkEnabled":true,"isAddLegacyCreditCardWidgetEnabledForChile":true,"isEncryptionServiceEnabledForBankAccount":true,"isGBSepaBankAccountInstrumentLinkEnabled":true,"isIrelandSepaBankAccountInstrumentLinkEnabled":true,"isPreventInvalidPISetAsDefaultEnabled":true,"isAddLegacyCreditCardWidgetEnabledForIndonesia":true,"isExternalGetCurrencyEnabledForAddSepaPage":false,"isAddLegacyCreditCardWidgetEnabledForCanada":false,"isBalanceApplicationTabEnabled":true,"isExternalTermsAndConditionsEnabled":false,"isAddLegacyCreditCardWidgetEnabledForAustralia":true,"isUAEBranchEnabled":true,"isDefaultCurrencyValidationsDisabled":false,"isAddLegacyCreditCardWidgetEnabledForMalaysia":true,"isSyriaBranchEnabled":false,"isCVVForVerifyEnabled":false,"isNetherlandSepaBankAccountInstrumentLinkEnabled":true,"isBalanceApplicationAlwaysVisibleEnabled":false,"isAddLegacyCreditCardWidgetWithoutMfaEnabledForSouthAfrica":true,"isAddLegacyCreditCardWidgetWithoutMfaEnabledForNewZealand":true,"isEncryptionServiceEnabledForCNYOTP":true,"isAddLegacyCreditCardWidgetEnabledForInc":true,"isAcssBankAccountEnabled":false,"isAddLegacyCreditCardWidgetEnabledForAmcsEmea":true,"isUpiAutoPayEnabled":true,"isAddLegacyCreditCardWidgetWithoutMfaEnabledForCanada":true,"isFinlandSepaBankAccountInstrumentLinkEnabled":true,"isPaymentProfileOptInEnabled":true,"isAddLegacyCreditCardWidgetWithoutMfaEnabledForSingapore":true,"isCAEEnabled":true,"isExternalGetCurrencyEnabledForSetPage":false,"isItalySepaBankAccountInstrumentLinkEnabled":true,"isUpiEnabled":true,"isNewDefaultCurrencyMessagingEnabled":true,"isCurrencyExpansionFeedbackEnabled":false,"isAddLegacyCreditCardWidgetEnabledForMexico":true,"isAustriaBankAccountInstrumentLinkEnabled":true,"isSingleUseVirtualPrivateAddressCreateRequestEnabled":true,"isAddLegacyCreditCardWidgetEnabledForNewZealand":false,"isEncryptionServiceEnabledForCC":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/P7YUE4OAJPH57NGOPNEXOVEA5G5QDNGPDEH3CC66FQNRTOLBEWZA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/P7YUE4OAJPH57NGOPNEXOVEA5G5QDNGPDEH3CC66FQNRTOLBEWZA\/index.css"}],"id":"paymentpreferences"},{"features":{"isPAPGEnabledForCreditCardPayment":true,"isP2SPayInvoiceWithMfaEnabledForCCWithAWSIncInvoices":true,"isSkSorEnabled":false,"isNewSorUsingCreatePaymentPlan":true,"isACHDeepVerificationEnabled":true,"isBinValidationBypassEnabled":true,"isIndiaDLEnabled":true,"isAISPLNBNewBanksEnabled":false,"isSBLVerificationDetailsEnabled":true,"isPayWithChineseYuanEnabled":true,"isWhitehatEnabled":false,"isP2SBillingContactAddressEnabled":true,"isPAPGEnabledForCreditCardVet":true,"isCollectionsRetryBannerEnabled":true,"isAISPLAPXV2Enabled":true,"isPAPG2Enabled":true,"isCardExpiryDateDisabledForAISPL":true,"isActsCreditCardEnabled":false,"isBrEloEnabled":true},"assets":[{"type":"script","url":"https:\/\/d2i9s2u0vperb5.cloudfront.net\/1671158149752\/index.js"},{"type":"css","url":"https:\/\/d2i9s2u0vperb5.cloudfront.net\/1671158149752\/index.css"}],"id":"payments"},{"features":{"isAWSUsageReportsEnabled":true,"isPurchaseOrdersEnabled":true,"isBCMCostCategoriesEnabled":true,"regionHasPolidenConsole":true,"isOrganizationsLinkInNav":true,"isRegionSwitchEnabled":true,"isSavingsPlanForBudgetsSwitchEnabled":true,"isMultiOrgConsolidatedBillingEnabled":false,"isInvoiceManagementCMCEnabled":true,"isCustomerVerificationEnabled":true,"isBCMCostAllocationTagsEnabled":true,"isCostExplorerEnabled":true,"isMOCBCMCEnabled":true,"isBillingPreferencesCMCEnabled":true,"isBudgetsEnabled":true,"isTaxEnabled":true,"isBudgetFeature1Enabled":false,"isPoseidonSideNavEnabled":true,"isBudgetsActionsEnabled":false,"isUnified":true,"isBillsCMCEnabled":false,"isFreeTierCMCEnabled":true,"isCostAndUsageReportsEnabled":true,"isSavingsPlansLambdaForBudgetsEnabled":true,"isSavingsPlansSwitchEnabled":true,"isBudgetsMLSavingsPlansEnabled":false,"isTaxSettingsPageCMCEnabled":true,"regionHasBillingConductor":true,"isBudgetsGetNotificationsForAccountEnabled":false,"isFapiaoEnabled":false,"isBudgetsReportsSwitchEnabled":true,"isTaxSettingsPolarisLaunchEnabled":true,"isCreditsCMCEnabled":true,"redirectToLegacyHomePage":false},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/SKHWC4TTRPSXF3XZKO5FE4VHMFX7IJMGZAVMH7DSEQPY35XN43VQ\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/SKHWC4TTRPSXF3XZKO5FE4VHMFX7IJMGZAVMH7DSEQPY35XN43VQ\/index.css"}],"id":"main"},{"features":{"isTransactionsBetaEnabled":false,"isTransactionsBetaDisabled":false},"assets":[{"type":"script","url":"https:\/\/d1x7ulmnn2grp7.cloudfront.net\/1786455736367\/index.js"},{"type":"css","url":"https:\/\/d1x7ulmnn2grp7.cloudfront.net\/1786455736367\/index.css"}],"id":"transactions"},{"features":{"emeaSelfOnboardAdvPayEnabled":true,"isAdvancePayV2Enabled":true,"shouldDisplayTotalAmountAlert":true,"isUnappliedFundsMigrationEnabled":true,"isUnifiedTransactionsViewEnabled":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/32YX6WR2W6W36MUHGOT7AJTBICTKKCG3FCUHO3TB3HXIH63EIBKA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/32YX6WR2W6W36MUHGOT7AJTBICTKKCG3FCUHO3TB3HXIH63EIBKA\/index.css"}],"id":"paymentsoverview"},{"features":{},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/T4RFOVGXIJNHRD4FVDILCBZ7SMDINKKT6DGXH4ONDPHZUI5SZQZA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/T4RFOVGXIJNHRD4FVDILCBZ7SMDINKKT6DGXH4ONDPHZUI5SZQZA\/index.css"}],"id":"customer-verification"},{"features":{"isFreeTierV2Enabled":true,"isSummaryAndBestPracticesEnabled":true,"isFreeTierPilotEnabled":false,"isUserPreferencesEnabled":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/5MG7CHIFNP4IAR77AYDSY2RT34ZHN3SA74BZZKSX54GA4H2U4RYA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/5MG7CHIFNP4IAR77AYDSY2RT34ZHN3SA74BZZKSX54GA4H2U4RYA\/index.css"}],"id":"freetier"},{"assets":[{"type":"script","url":"https:\/\/d2ql9csjvpkgls.cloudfront.net\/35822951-1404-4f41-9bd6-a75430225288\/budgets.js"},{"type":"css","url":"https:\/\/d2ql9csjvpkgls.cloudfront.net\/35822951-1404-4f41-9bd6-a75430225288\/budgets.css"}],"id":"budgets"},{"features":{"isPortalPOFitAndFinishEnabled":true,"isWebpack5Widget":true,"isGranularAssociationEnabled":false,"isFlexibleInvoicingEnabled":true,"isPortalPOEnabled":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/72XAFTP6YBG7WOJJZKZHE2NGNYYZ5VZMTET2TIWBNZDON3OWLLBA\/index.js"}],"id":"purchaseorder"},{"features":{"isFreeTierV2Enabled":true,"isFreeTierPilotEnabled":false,"isCreditLevelSharingEnabled":false,"isTabbedViewEnabled":true,"isMAPCMCRedirectEnabled":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/TSKVEC5P6PX6PRHGAHSVQJ77VQYEH3WWBAXFVNYIGRYGPGVJ5BTA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/TSKVEC5P6PX6PRHGAHSVQJ77VQYEH3WWBAXFVNYIGRYGPGVJ5BTA\/index.css"}],"id":"credits"},{"features":{"isInvoiceManagementEnabled":false,"isTransferBillingEnabled":false},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/NGVBLWJJDCM7FS6CHFYACFXQGKXNRE2BU3HQHSFV54XFPRCWUGBQ\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/NGVBLWJJDCM7FS6CHFYACFXQGKXNRE2BU3HQHSFV54XFPRCWUGBQ\/index.css"}],"id":"invoice-management"},{"features":{},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/OYN34XFF4FI4SY7UDSVJKESO7INUDETOLIGHMLDQOLJH5LFYXJEA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/OYN34XFF4FI4SY7UDSVJKESO7INUDETOLIGHMLDQOLJH5LFYXJEA\/index.css"}],"id":"financing"},{"features":{"TaiwanSOR":true,"isProd":true,"ThailandWithholding":false,"ATSMBatchPut":true,"ATSMSetPAN":true,"FranceEInvoicing":true,"ATSMListTaxRegistrationToFetchDoc":true,"FranceTerritoriesESS":true,"ATSMPreviewTaxRegChangeAPI":true,"isWebpack5Widget":true,"EnableIndonesiaSOR":true,"IsTaxSettingsCMCMigrated":true,"ATSMPutTaxExemptionAPI":true,"ChileSOR":false,"enableATSM":true,"ATSMGetSupportExemptionTypesAPI":true,"ThailandSOR":false,"EnableAISPLNameChange":true,"canadaTaxExemptionSOR":true,"isAisplConfigurableSorEnabled":false,"ATSMListTaxExemptionsAPI":true,"inheritedFromColumn":true,"AddressAutocomplete":true,"MexicoSOR":true,"WidgetEnabled":false,"EnableIDT0Banner":false,"ATSMHeritageUpdateCheck":true,"IndonesiaWithholding":true,"usTaxExemptionsInheritance":true,"ATSMInheritanceAPI":true,"AddressSuggestion":false},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/XNCA3KYZR5TAHRICHQHRCCDM67HNUVH6WTZ3CWBDZ6JDPQZEO3IQ\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/XNCA3KYZR5TAHRICHQHRCCDM67HNUVH6WTZ3CWBDZ6JDPQZEO3IQ\/index.css"}],"id":"tax-settings"},{"features":{"isInvoicesGroupingBySoRMarketplaceEnabled":true,"isEbcGA":true,"isBillingNotificationsEnabled":false,"isResellerNotificationEnabled":true,"isBillingViewEnabled":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/SMPANI32WKCBG2EAW3E67AUSM4NOSEYQTSWOSCRD7UXHESC5YOSQ\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/SMPANI32WKCBG2EAW3E67AUSM4NOSEYQTSWOSCRD7UXHESC5YOSQ\/index.css"}],"id":"bills"},{"features":{"isFreeTierV2Enabled":false,"isInvoicesGroupingBySoRMarketplaceEnabled":true,"isWebpack5Widget":true,"isResellerNotificationEnabled":true,"isBillingNotificationsEnabled":true,"isCSVDownloadEnabled":true,"isEDPAlertEnabled":true,"isInvoiceCorrectionEnabled":true,"isInvoiceRegenEnabled":false,"isRandomFeedbackDisabled":false},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/YF4D2PN7XV7IMUJM5PWGIOMXALWT2CZZ7UVXA6MOFQ45P3VH3JPA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/YF4D2PN7XV7IMUJM5PWGIOMXALWT2CZZ7UVXA6MOFQ45P3VH3JPA\/index.css"}],"id":"billsv2"},{"features":{"isCommunicationPreferencesCardEnabled":true,"reorderAddressFields":false,"isAWSRegionsEnabled":true,"skipGranularPermissionsCheck":false,"isRegionOptWidgetEnabled":false,"isAWSSupportPlansCardEnabled":true,"showAccountName":true,"isReservedInstanceMarketplaceCardEnabled":true,"isAccountsSDKForAlternateContactEnabled":false,"isPaymentCurrencyPreferenceCardEnabled":true,"isWebpack5Widget":true,"isAlternateContactWidgetEnabled":true,"isCloseAccountFeedbackEnabled":true,"isOtherSettingsCardEnabled":true,"isAccountContractCardEnabled":true,"isAccountsSDKForContactInformationEnabled":false,"isAWSPartition":true,"isAccountNameUpdateEnabled":true,"showLinkedGovCloudAccountInformation":true,"isIAMAccessSupported":true},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/AJ3GEKDNE3CVSPSLKFBRD6KI7JLP5HMUZIZHV6WWEJKUZEUV5OTQ\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/AJ3GEKDNE3CVSPSLKFBRD6KI7JLP5HMUZIZHV6WWEJKUZEUV5OTQ\/index.css"}],"id":"account"},{"features":{"isSorBannerAllowlisted":false,"isPolidenBannerServiceAvailable":false},"assets":[{"type":"script","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/CQ4HRLEXUR7XCVF5NCINSNNRZSEDP6KVB77WWCBE5ZUBIZODGXCA\/index.js"},{"type":"css","url":"https:\/\/a.b.cdn.console.awsstatic.com\/a\/v1\/CQ4HRLEXUR7XCVF5NCINSNNRZSEDP6KVB77WWCBE5ZUBIZODGXCA\/index.css"}],"id":"dashboard"}]</script>
+    
+</div>
+</div>
+<div id="f" role="contentinfo" ng-non-bindable>
+
+<div id="footer">
+</div>
+<div id="console-nav-footer" style="">
+    <div id="footer-content">
+    </div>
+</div>
+</div>
+</div>
+
+<script data-platform-asset="panorama" id="awsc-panorama-bundle" type="text/javascript" crossorigin="anonymous" src="https://a.b.cdn.console.awsstatic.com/a/v1/V2TIZDUB2KD6Q2YJ4F3IZZGYS6IKACGO6G7II6RMOGR4CYFBVINA/init/7b79bd85e6dd41a38d9abd89b51948ded0fdb446b08f4512b83371ff8c076b52.js" data-url="https://a.b.cdn.console.awsstatic.com/a/v1/V2TIZDUB2KD6Q2YJ4F3IZZGYS6IKACGO6G7II6RMOGR4CYFBVINA/a1a0767c3b0142acb8979a8dc8dffaa86a1c522a42424e999fb2ebd35dae213a.js"></script>
+
+
+        
+          
+            <script src="https://a.b.cdn.console.awsstatic.com/a/v1/SKHWC4TTRPSXF3XZKO5FE4VHMFX7IJMGZAVMH7DSEQPY35XN43VQ/index.js" id="main-script"  type="text/javascript"></script>
+          
+        
+          
+        
+          
+        
+
+        
+    
+
+
+
+</body>
+</html>
+
+
